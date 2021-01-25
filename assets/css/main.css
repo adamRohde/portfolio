@@ -3148,13 +3148,13 @@ body.is-ie .spotlights > section {
     opacity: 1;
 }
 
-.spotlights > section:nth-child(2) {
+.spotlights > section:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.spotlights > section:nth-child(3) {
+/* .spotlights > section:nth-child(3) {
     background-color: rgba(0, 0, 0, 0.1);
-}
+} */
 
 .spotlights > section.inactive > .image:before,
 body.is-preload .spotlights > section > .image:before {
@@ -3585,6 +3585,7 @@ body.is-preload .wrapper.fade > .inner {
 #sidebar {
     padding: 2.5em 2.5em 0.5em 2.5em;
     background: #312450;
+    /* background: #ffffff; */
     cursor: default;
     height: 100vh;
     left: 0;
