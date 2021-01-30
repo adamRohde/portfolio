@@ -3987,12 +3987,20 @@ body.is-preload #sidebar nav ul li {
 
 .grid-wrapper > div {
     min-height: 250px;
-    background-color: rgb(144, 122, 214);
+    background-color: rgb(255, 255, 255);
     font-weight: bold;
     font-family: Baloo, sans-serif;
     font-size: 2.157rem;
     padding: 10px;
     border-radius: 5px;
+}
+
+h6 {
+    color: rgb(103, 103, 199);
+}
+
+h4 {
+    color: black;
 }
 
 .hide {
