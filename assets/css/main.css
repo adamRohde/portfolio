@@ -270,7 +270,7 @@ i {
 }
 
 p {
-    margin: 0 0 2em 0;
+    margin: 2em 0 2em 0;
 }
 
 h1,
@@ -300,9 +300,9 @@ h1 {
 }
 
 h1.major {
-    margin: 0 0 1.3em 0;
+    margin: 0 0 0 0;
     position: relative;
-    padding-bottom: 0.35em;
+    padding-bottom: 0em;
 }
 
 h1.major:after {
@@ -345,7 +345,7 @@ h6 {
 
 @media screen and (max-width: 736px) {
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     h2 {
@@ -2658,6 +2658,7 @@ input[type="radio"] + label:before {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 2em;
 }
 
 .image img {
@@ -2689,7 +2690,7 @@ input[type="radio"] + label:before {
 
 .image.fit {
     display: block;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
     width: 100%;
 }
 
@@ -3287,14 +3288,14 @@ table.alt tfoot {
 }
 
 .wrapper > .inner {
-    padding: 5em 5em 3em 5em;
+    padding: 2em 2em 2em 2em;
     max-width: 100%;
     width: 75em;
 }
 
 @media screen and (max-width: 1680px) {
     .wrapper > .inner {
-        padding: 4em 4em 2em 4em;
+        padding: 1.45em 2em 0.5em 2em;
     }
 }
 
@@ -3306,7 +3307,7 @@ table.alt tfoot {
 
 @media screen and (max-width: 736px) {
     .wrapper > .inner {
-        padding: 3em 2em 1em 2em;
+        padding: 2em 2em 2em 2em;
     }
 }
 
@@ -3444,7 +3445,7 @@ body.is-preload .wrapper.fade > .inner {
     display: flex;
     background-color: #5e42a6;
     cursor: default;
-    padding: 1.75em 2em;
+    padding: 1em 1.2em;
 }
 
 #header > .title {
@@ -3512,7 +3513,7 @@ body.is-preload .wrapper.fade > .inner {
 
     #header .title {
         font-size: 1.25em;
-        padding: 1em 0;
+        padding: 0.35em 0;
     }
 
     #header > nav {
@@ -3977,18 +3978,25 @@ body.is-preload #sidebar nav ul li {
     width: 75em;
 }
 
-.grid-container {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 30px;
 }
 
-.grid-child {
-    height: 35vh;
-    width: 15vw;
-    background-color: rgb(77, 27, 27);
-    margin: 1em;
+.grid-wrapper > div {
+    min-height: 250px;
+    background-color: rgb(144, 122, 214);
+    font-weight: bold;
+    font-family: Baloo, sans-serif;
+    font-size: 2.157rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
 }
 
 @media screen and (max-width: 1680px) {
