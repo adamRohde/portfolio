@@ -3977,6 +3977,20 @@ body.is-preload #sidebar nav ul li {
     width: 75em;
 }
 
+.grid-container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.grid-child {
+    height: 35vh;
+    width: 15vw;
+    background-color: rgb(77, 27, 27);
+    margin: 1em;
+}
+
 @media screen and (max-width: 1680px) {
     .wrapper > .spotlight-section-projects {
         padding: 0em 4em 2em 4em;
